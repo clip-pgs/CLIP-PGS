@@ -177,9 +177,6 @@ class PatchDropout_PGS(nn.Module):
         
         mask = (Sim_chose_mask != 0)[:, 1:].type(x.dtype)
         
-        # min_p = L - int(mask.sum(-1).min().item()) - int(boundary_mask.sum(dim=-1).min().item())
-        
-        # return mask, attn_mask, min_p
         return mask, attn_mask
 
     def select_mask(self, x, mask, attn_mask, L, N, D, min_mask_ratio, boundary_mask):
