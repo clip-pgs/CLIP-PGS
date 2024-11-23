@@ -32,7 +32,7 @@ Refer to [OpenCLIP](https://github.com/mlfoundations/open_clip) for instructions
 # CLIP-PGS-0.5 and CLIP-PGS-0.3
 bash clip-train.sh 
 ```
-Download the models, including [CLIP-PGS-0.5](https://github.com/clip-pgs/CLIP-PGS/releases/download/v0.1/clip-pgs-0.5.pt) and [CLIP-PGS-0.3](https://github.com/clip-pgs/CLIP-PGS/releases/download/v0.1/clip-pgs-0.3.pt).
+
 ## 2. Downstream Evaluation Tasks
 Kindly ensure that ```clip-benchmark``` is installed before running the script below.
 
@@ -40,7 +40,7 @@ Kindly ensure that ```clip-benchmark``` is installed before running the script b
 # Step 1: install clip-benchmark
 pip install clip-benchmark
 ```
-
+Download the models, including [CLIP-PGS-0.5](https://github.com/clip-pgs/CLIP-PGS/releases/download/v0.1/clip-pgs-0.5.pt) and [CLIP-PGS-0.3](https://github.com/clip-pgs/CLIP-PGS/releases/download/v0.1/clip-pgs-0.3.pt).
 ```bash
 # Step 2: Zero-Shot Classification, Zero-Shot Retrieval, Linear Probing Classification, Robustness Assessment, and Language Compositionality
 bash clip-test.sh
